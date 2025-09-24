@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat com Vídeo Lateral e Microfone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Chat com Vídeo e Microfone</h2>
+
+    <div class="chat-container">
+      <div id="camera-container">
+        <video id="camera" autoplay muted></video>
+        <div class="camera-buttons">
+          <button id="startCam">Ligar Câmera</button>
+          <button id="stopCam">Desligar Câmera</button>
+        </div>
+        <div class="microphone-section">
+          <button id="toggleMic">Ligar Microfone</button>
+          <div id="mic-level-container">
+            <div id="mic-level"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-box">
+        <div id="chat"></div>
+        <div class="input-group">
+          <input id="msg" type="text" placeholder="Digite sua mensagem...">
+          <button id="enviar" onclick="enviar()">Enviar</button>
+          <button id="sair" onclick="sair()">Sair</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
